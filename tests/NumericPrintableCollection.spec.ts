@@ -58,6 +58,31 @@ describe('NumericPrintableCollection', () => {
     const collection = new NumericPrintableCollection([]);
     expect(collection.print()).toBe('');
   });
+
+  it('Debe tener una función addItem', () => {
+      const collection = new NumericPrintableCollection([]);
+      expect(typeof collection.addItem).toBe('function');
+    });
+  
+    it('Debe tener una función getItem', () => {
+      const collection = new NumericPrintableCollection([]);
+      expect(typeof collection.getItem).toBe('function');
+    });
+  
+    it('Debe tener una función removeItem', () => {
+      const collection = new NumericPrintableCollection([]);
+      expect(typeof collection.removeItem).toBe('function');
+    });
+  
+    it('Debe tener una función getNumberOfItems', () => {
+      const collection = new NumericPrintableCollection([]);
+      expect(typeof collection.getNumberOfItems).toBe('function');
+    });
+  
+    it('Debe tener una función print', () => {
+      const collection = new NumericPrintableCollection([]);
+      expect(typeof collection.print).toBe('function');
+    });
 });
 
 
