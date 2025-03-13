@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vitest } from 'vitest';
 import { Series } from '../src/ejercicio-01/Series';
 
 describe('Series', () => {
@@ -17,5 +17,28 @@ describe('Series', () => {
   it('should search by platform', () => {
     seriesCollection.addElement(seriesCollection);
     expect(seriesCollection.SearchByPlatform('Netflix')).toContain(seriesCollection);
+  });
+
+  it('should calculate the show duration', () => {
+    expect(seriesCollection.ShowDuration()).toBe(310);
+  });
+
+  it('should print the series details', () => {
+    console.log = vitest.fn();
+    seriesCollection.print();
+    expect(console.log).toHaveBeenCalledWith('Serie: Breaking Bad');
+    expect(console.log).toHaveBeenCalledWith('Temporadas: 5');
+    expect(console.log).toHaveBeenCalledWith('Capitulos: 62');
+    expect(console.log).toHaveBeenCalledWith('Valoracion: 9.5');
+    expect(console.log).toHaveBeenCalledWith('Director: Vince Gilligan');
+    expect(console.log).toHaveBeenCalledWith('Plataforma: Netflix');
+  });
+
+  it('should not find a series with a different assessment', () => {
+    expect(seriesCollection.SearchByassessment(8.0)).toEqual([]);
+  });
+
+  it('should not find a series on a different platform', () => {
+    expect(seriesCollection.SearchByPlatform('Hulu')).toEqual([]);
   });
 });
