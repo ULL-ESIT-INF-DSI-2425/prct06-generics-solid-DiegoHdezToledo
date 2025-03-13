@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 
-import { Documental } from '../../src/ejercicio-01/Documental';
+import { Documental } from '../src/ejercicio-01/Documental';
 
 describe('Documental', () => {
   const documentalCollection = new Documental(90, 7.0, 'David Attenborough', 'BBC', 'Documental Collection');

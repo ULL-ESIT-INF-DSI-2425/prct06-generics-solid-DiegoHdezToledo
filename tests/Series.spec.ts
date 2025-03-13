@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { Series } from '../../src/ejercicio-01/Series';
+import { Series } from '../src/ejercicio-01/Series';
 
 describe('Series', () => {
   const seriesCollection = new Series('Series Collection', 'Breaking Bad', 5, 62, 9.5, 'Vince Gilligan', 'Netflix');

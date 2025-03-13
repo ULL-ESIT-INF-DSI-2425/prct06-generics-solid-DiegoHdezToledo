@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 
-import { Peliculas } from '../../src/ejercicio-01/Peliculas';
+import { Peliculas } from '../src/ejercicio-01/Peliculas';
 
 describe('Peliculas', () => {
   const peliculasCollection = new Peliculas(120, 8.5, 'Christopher Nolan', 'HBO', 'Peliculas Collection');
