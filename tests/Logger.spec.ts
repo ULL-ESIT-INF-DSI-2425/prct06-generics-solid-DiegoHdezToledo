@@ -136,7 +136,7 @@ describe('Logger', () => {
     logger.log('testUser2', 'testAction2', testDate2);
     logger.log('testUser3', 'testAction3', testDate3);
 
-    const logsArray = [];
+    const logsArray: { usuario: string; accion: string; fecha_hora: Date }[] = [];
     for (const log of logger) {
       logsArray.push(log);
     }

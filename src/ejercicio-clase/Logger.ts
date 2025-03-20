@@ -11,8 +11,6 @@ export type Entrada = {
   fecha_hora: Date;
 };
 
-
-
 /**
  * Clase logger usando patron singleton
  * 
