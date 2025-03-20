@@ -1,4 +1,4 @@
-import { BasicStreameableCollection, InterSerie } from "./BasicStreameableCollection";
+import { BasicStreameableCollection, InterSerie } from "./BasicStreameableCollection.js";
 
 export class Series extends BasicStreameableCollection<Series> implements InterSerie  {
 

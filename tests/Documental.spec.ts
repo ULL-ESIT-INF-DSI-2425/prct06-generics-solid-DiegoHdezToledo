@@ -1,5 +1,4 @@
 import { describe, it, expect, vi } from 'vitest';
-
 import { Documental } from '../src/ejercicio-01/Documental';
 
 describe('Documental', () => {

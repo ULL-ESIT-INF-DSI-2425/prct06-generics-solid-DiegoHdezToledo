@@ -1,4 +1,4 @@
-import { BasicStreameableCollection, DocuPeli } from "./BasicStreameableCollection";
+import { BasicStreameableCollection, DocuPeli } from "./BasicStreameableCollection.js";
 
 export class Peliculas extends BasicStreameableCollection<Peliculas> implements DocuPeli  {
 
